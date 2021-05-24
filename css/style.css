@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: white;
+  padding: 5px 30px 6px 30px;
+  align-items: center;
+}
+
+aside p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+aside form {
+  display: flex;
+  gap: 10px;
+}
+
+aside form select {
+  color: white;
+  background: #222222;
+  border: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+  background-color: #f0a83e;
+}
+
+.logo-header span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-header span.span-cat-dog {
+  color: #ffffff;
+}
+
+header nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header nav ul li a:hover {
+  color: #222222;
+}
+
+header nav ul li img {
+  margin-right: 2px;
+}
+
+.icons-header i {
+  color: #ffffff;
+}
+
+.icons-header i:hover {
+  color: #222222;
+}
+
+.icons-header {
+  display: flex;
+  gap: 12px;
+}
+
+main {
+  padding: 92px 0px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 11px;
+  font-size: 40px;
+}
+
+main .list-products ul {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+main .list-products ul li::after {
+  content: "-";
+  margin-left: 15px;
+}
+
+main .list-products ul .list-products-end::after {
+  content: " ";
+}
+
+main .list-products ul li {
+  list-style-type: none;
+  color: #666666;
+  font-size: 15px;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0px;
+  gap: 20px;
+}
+
+.container .background-one {
+  background-image: url("../img/churrasquito.png");
+}
+
+.container .background-two {
+  background-image: url("../img/comedero.png");
+}
+
+.container .background-three {
+  background-image: url("../img/Imagenes\ Examen\ B.png");
+}
+
+.container .backgrounds {
+  width: 265px;
+  height: 312px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.backgrounds .descriptions {
+  margin-bottom: 25px;
+}
+
+.descriptions h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: #f0a83e;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.descriptions p {
+  font-weight: 500;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #000000;
+  width: 100%;
+  color: white;
+  padding: 4px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  header nav,
+  header .icons-header {
+    display: none;
+  }
+
+  header::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    font-size: 25px;
+    color: white;
+  }
+
+  main .container {
+    flex-direction: column;
+  }
+}
